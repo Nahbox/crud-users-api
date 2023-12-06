@@ -25,6 +25,12 @@ docker-compose up --build
 
 ## Использование сервиса
 
+### Добавление нового пользователя:
+```bash
+curl -X 'POST' 'http://localhost:8080/users' -H 'Content-Type: application/json' -d '{"age": 25, "name": "John", "occupation": "Development in golang", "salary": 100000}'
+curl -X 'POST' 'http://localhost:8080/users' -H 'Content-Type: application/json' -d '{"age": 50, "name": "Alex", "occupation": "Development in golang, java, c, c++ and many others.", "salary": 1000000}'
+```
+
 ### Получение списка всех пользователей:
 ```bash
 curl -X 'GET' 'http://localhost:8080/users' -H 'accept: application/json'
@@ -33,11 +39,6 @@ curl -X 'GET' 'http://localhost:8080/users' -H 'accept: application/json'
 ### Получение пользователя по его ID:
 ```bash
 curl -X 'GET' 'http://localhost:8080/users/1'
-```
-
-### Добавление нового пользователя в базу данных:
-```bash
-curl -X 'POST' 'http://localhost:8080/users' -H 'Content-Type: application/json' -d '{"age": 25, "name": "John", "occupation": "Development in golang", "salary": 100000}'
 ```
 
 ### Обновление полей пользователя по его ID:
