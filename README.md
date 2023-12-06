@@ -25,37 +25,27 @@ docker-compose up --build
 
 ## Использование сервиса
 
-### Get All Users:
-
-Получение списка всех пользователей:
+### Получение списка всех пользователей:
 ```bash
 curl -X 'GET' 'http://localhost:8080/users' -H 'accept: application/json'
 ```
 
-### Get User by ID:
-
-Получение пользователя по его ID:
+### Получение пользователя по его ID:
 ```bash
 curl -X 'GET' 'http://localhost:8080/users/1'
 ```
 
-### Create User:
-
-Добавление нового пользователя в базу данных:
+### Добавление нового пользователя в базу данных:
 ```bash
 curl -X 'POST' 'http://localhost:8080/users' -H 'Content-Type: application/json' -d '{"age": 25, "name": "John", "occupation": "Development in golang", "salary": 100000}'
 ```
 
-### Update User by ID:
-
-Обновление полей пользователя по его ID:
+### Обновление полей пользователя по его ID:
 ```bash
 curl -X 'PUT' 'http://localhost:8080/users/1' -H 'Content-Type: application/json' -d '{"age": 20, "name": "Jake", "occupation": "Development in Java", "salary": 99999}'
 ```
 
-### Delete User by ID:
-
-Удаление пользователя по его ID:
+### Удаление пользователя по его ID:
 ```bash
 curl -X 'DELETE' 'http://localhost:8080/users/1'
 ```
