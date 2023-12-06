@@ -60,6 +60,11 @@ curl -X 'PUT' 'http://localhost:8080/users/{ID}' -H 'Content-Type: application/j
 curl -X 'DELETE' 'http://localhost:8080/users/{ID}'
 ```
 
+## Swagger
+
+Swagger с описанием API доступен после запуска сервиса по адресу:
+http://localhost:8080/swagger/index.html
+
 ## Тесты
 
 Тесты находятся в директории **/internal/config**.
