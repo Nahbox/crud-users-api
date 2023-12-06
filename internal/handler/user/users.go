@@ -40,6 +40,7 @@ func serializeUsers(users []models.User) ([]UserSerialized, error) {
 	return usersSerialized, nil
 }
 
+// ТЗ: Сериализация в разные форматы должна происходить одновременно.
 func serializeUser(user models.User) (*UserSerialized, error) {
 	var userSer UserSerialized
 	errsCh := make(chan error, 3)
