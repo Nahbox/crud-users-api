@@ -4,6 +4,7 @@ import (
 	"github.com/Nahbox/crud-users-api/internal/models"
 )
 
+// TODO: add mock tests
 type DB interface {
 	GetAllUsers() ([]models.User, error)
 	AddUser(user *models.User) error
