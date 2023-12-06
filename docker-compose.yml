@@ -8,9 +8,7 @@ services:
     env_file:
       - .env
     ports:
-      - "5435:5432"
-    volumes:
-      - data:/var/lib/postgresql/data
+      - "5432:5432"
   server:
     container_name: crud_users_api_server
     build:
@@ -24,5 +22,3 @@ services:
       - default
     ports:
       - "8080:8080"
-volumes:
-  data:
