@@ -33,7 +33,7 @@ curl -X 'POST' 'http://localhost:8080/users' -H 'Content-Type: application/json'
 
 ### Получение списка всех пользователей:
 ```bash
-curl -X 'GET' 'http://localhost:8080/users' -H 'accept: application/json'
+curl -X 'GET' 'http://localhost:8080/users' 
 ```
 
 ### Получение пользователя по его ID:
